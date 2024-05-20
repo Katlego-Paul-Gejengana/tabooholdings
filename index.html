@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taboo Holdings</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">Taboo Holdings</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#our-work">Our work</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li class="ctn"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <img src="./img/menuPic.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Based in Johannesburg</h2>
+            <div class="line"></div>
+            <h1>A WONDERFULL GIFT</h1>
+            <a href="#contact" class="ctn">Contact Us</a>
+        </div>
+    </header>
+
+    <section id="our-work">
+            <div class="our-work-content">
+                <h1>Our Work</h1>
+                <div class="line"></div>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col">
+                    <div class="slideshow-before-container">
+                        <div class="slideshow-before">
+                            <img src="img/before1.jpg" alt="Image 1">
+                        </div>
+                        <div class="slideshow-before">
+                            <img src="img/before2.jpg" alt="Image 2">
+                    </div>
+                        <div class="slideshow-before">
+                            <img src="img/before3.jpg" alt="Image 3">
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col">
+                    <div class="slideshow-after-container">
+                        <div class="slideshow-after">
+                            <img src="img/after1.jpg" alt="Image 1">
+                        </div>
+                        <div class="slideshow-after">
+                            <img src="img/after2.jpg" alt="Image 2">
+                        </div>
+                        <div class="slideshow-after">
+                            <img src="img/after3.jpg" alt="Image 3">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <section id="services">
+                <div class="services-content">
+                    <h1>Our Services</h1>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Ceiling</li>
+                        <li>Tiling</li>
+                        <li>Painting</li>
+                        <li>Plumbing</li>
+                        <li>Electricity</li>
+                    </ul>
+                </div>    
+            </div>
+        </section>
+    </section>
+
+    <section id="about-us" class="about-us">
+        <div class="about-us-content">
+            <h1>About Us</h1>
+            <div class="line"></div>
+            <br>
+            <br>
+            <br>
+            <p> The company has been established successfully and 
+                has been in business for the 4 years since it was 
+                established. The business offer all General building 
+                services such as Tiling, Ceiling, Plumbing, Paving, 
+                Brick Laying, Plastering, Painting, Guard Rails 
+                installation etc</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1>Contact</h1>
+        <div class="line"></div>
+
+        <p>For inquiries or to schedule a consultation, please contact us at:</p>
+        <br>
+        <br>
+        <p>Email: mm85.mofokeng@gmail.com</p>
+        <p>Phone: 079 407 2352</p>
+        <br>
+        <br>
+        <div class="icons">
+            <a href="https://www.instagram.com/reel/CoKy3zqgmYV/?igsh=aTA3NDJsZnB6enFj" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a> 
+        </div>
+        
+
+    </section>
+
+    <section class="footer">
+        
+        <p>© 2024 Wiseman Creatives. All rights reserved.</p>
+
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlink = document.querySelector('.nav-links')
+    
+        menuBtn.addEventListener('click', () => { navlink.classList.toggle('mobile-menu') })
+    
+    
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            var i;
+            var slidesBefore = document.getElementsByClassName("slideshow-before");
+            var slidesAfter = document.getElementsByClassName("slideshow-after");
+    
+            // Hide all slides
+            for (i = 0; i < slidesBefore.length; i++) {
+                slidesBefore[i].style.display = "none";
+            }
+            for (i = 0; i < slidesAfter.length; i++) {
+                slidesAfter[i].style.display = "none";
+            }
+    
+            slideIndex++;
+            if (slideIndex > slidesBefore.length) { slideIndex = 1 } 
+    
+            // Show the current slide
+            slidesBefore[slideIndex - 1].style.display = "block";
+            slidesAfter[slideIndex - 1].style.display = "block";
+    
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+    
+</body>
+
+</html>
