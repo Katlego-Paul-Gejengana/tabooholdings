@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
+.feedback form{
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
 *{
     margin: 0;
     padding: 0;
@@ -76,6 +86,7 @@ header {
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
+    color:#fc036f;
 }
 
 .ctn{
@@ -199,6 +210,36 @@ p {
     color: whitesmoke;
     font-size: 150%;
 
+}
+.feedback h1 {
+    font-size: 7vmin;
+    text-align: center;
+    color: #484872;
+}
+.feedback .line {
+    margin-bottom: 50px;
+}
+
+.feedback-name-input {
+    text-align: center;
+    padding: 0% 20%;
+}
+
+.feedback-email-input {
+    text-align: center;
+}
+
+.feedback-comment-feedback-input {
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    position: relative;
+
+}
+.feedback-send-btn {
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
 .contact h1 {
