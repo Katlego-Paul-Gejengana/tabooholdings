@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taboo Holdings</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script> 
 </head>
 <body>
 
@@ -16,6 +17,7 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#our-work">Our work</a></li>
             <li><a href="#about-us">About Us</a></li>
+            <li><a href="#feedback">Feedback</a></li>
             <li class="ctn"><a href="#contact">Contact</a></li>
         </ul>
 
@@ -26,7 +28,7 @@
         <div class="header-content">
             <h2>Based in Johannesburg</h2>
             <div class="line"></div>
-            <h1>A WONDERFULL GIFT</h1>
+            <h1>Out of the township of Tembisa</h1>
             <a href="#contact" class="ctn">Contact Us</a>
         </div>
     </header>
@@ -99,6 +101,39 @@
                 installation etc</p>
         </div>
     </section>
+
+    <section id="feedback" class="feedback">
+
+        <h1>Feedback</h1>
+        <div class="line"></div>
+        <br>
+        <br>
+
+        <form class="feedback-form" action="https://formspree.io/f/mnnanakg" method="POST" >
+            <h2>Enter your feedback below</h2>
+
+            <br>
+            <br>
+            <div class="feedback-name-input">
+                <input type="text" name="full-name" placeholder="Full name">
+                <i class="far fa-user"></i>
+            </div>
+            <br>
+
+            <div class="feedback-email-input">
+                <input type="text" name="email" placeholder="Email address">
+                <i class="far fa-envelope"></i> 
+            </div>
+            
+            <br>
+            <textarea class="feedback-comment-feedback-input" name="Comment/feedback" cols="50" rows="10" placeholder="Enter your feedback here"></textarea>
+            <br>
+            <button class="feedback-send-btn"><a href="#our-work"></a>Send</button>
+        </form>
+
+           
+    </section>
+
 
     <section class="contact">
         <h1>Contact</h1>
